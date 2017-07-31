@@ -1,0 +1,5 @@
+# mircroservice management path.
+management:
+  contextPath: /admin
+  
+  

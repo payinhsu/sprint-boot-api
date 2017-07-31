@@ -1,0 +1,8 @@
+<included>      
+	<logger name="com.yolo.integration.ezugi" additivity="false">
+		<level value="${LOGGING_LEVEL}" />
+      <appender-ref ref="dailyRollingFileAppender" />
+		<appender-ref ref="minuteRollingFileAppender" />
+		<appender-ref ref="consoleAppender" />
+	</logger>
+</included>

@@ -1,0 +1,18 @@
+# The name must be changed to artifactId,
+# For an example: poseitech-microservices-simple is artifactId,   
+# spring.applicatin.name must be poseitechMicroserviceSimple
+
+spring:
+   application: 
+      name: ${SPRING_APPLICATION_NAME}
+
+# spring profile 設定
+   profiles:
+      active: ${SPRING_PROFILES_ACTIVE}
+       
+   cloud:
+      config:
+         uri: ${CLOUD_CONFIG_URI}
+         username: ${CLOUD_CONFIG_SECURITY_USER}
+         password: ${CLOUD_CONFIG_SECURITY_PASSWORD}
+      
